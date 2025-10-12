@@ -1,0 +1,53 @@
+package com.csmayur.Journal.service;
+
+import com.csmayur.Journal.entity.JournalEntry;
+import com.csmayur.Journal.entity.UserEntity;
+import com.csmayur.Journal.repository.UserEntryRepo;
+import org.bson.types.ObjectId;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
+import java.util.Optional;
+
+@Component
+public class UserService {
+    @Autowired
+    private UserEntryRepo userEntryRepo;
+
+    //save
+    //getALl
+    //findById
+    // delete by id
+
+    public void  saveEntry(UserEntity userEntity){
+        userEntryRepo.save(userEntity);
+    }
+
+    public List<UserEntity> getAll(){
+        return userEntryRepo.findAll();
+    }
+
+    public ResponseEntity<UserEntity> getById(ObjectId myId){
+        Optional<UserEntity> userEntity = userEntryRepo.findById(myId);
+        if(userEntity.isPresent()){
+            return new ResponseEntity<>(userEntity.get(), HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>( HttpStatus.NOT_FOUND);
+
+    }
+
+
+    public  Boolean deleteById(ObjectId myId){
+        if(userEntryRepo.findById(myId).isPresent()){
+            userEntryRepo.deleteById(myId);
+            return true;
+        }
+        return false;
+    }
+    public  UserEntity findByUserId(String userName){
+        return userEntryRepo.findByUserName(userName);
+    }
+}
