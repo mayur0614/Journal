@@ -5,6 +5,8 @@ import com.csmayur.Journal.entity.UserEntity;
 import com.csmayur.Journal.repository.JournalEntryRepo;
 import com.csmayur.Journal.repository.UserEntryRepo;
 import org.bson.types.ObjectId;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,11 +15,12 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
-
+//simple logging fassard for java
 @Component
 public class JournalEntryService {
     @Autowired
     private JournalEntryRepo journalEntryRepo;
+
 
     @Autowired
     private UserService userService ;
@@ -30,7 +33,6 @@ public class JournalEntryService {
             userIdB.getJournalEntries().add(saved);
             userService.saveEntry(userIdB);
         }catch(Exception e){
-            System.out.println(e);
             throw new RuntimeException("An error occur while saving the entry ",e);
         }
     }
@@ -67,10 +69,6 @@ public class JournalEntryService {
             throw new RuntimeException("An unexpected error occusre while deleting an entry",e);
         }
     }
-
-    /*public List<JournalEntry> findByUserName(String userName) {
-
-    }*/
 }
 
 /*

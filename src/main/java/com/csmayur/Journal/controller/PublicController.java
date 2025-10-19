@@ -28,10 +28,10 @@ public class PublicController {
 
 
     @PostMapping("/create-user")
-    public ResponseEntity<UserEntity> createUser(@RequestBody UserEntity userEntity) {
+    public ResponseEntity<?> createUser(@RequestBody UserEntity userEntity) {
         // Encode password using injected bean
         userEntity.setPassword(passwordEncoder.encode(userEntity.getPassword()));
-        UserEntity savedUser = userService.saveEntry(userEntity);
+        boolean savedUser = userService.saveEntry(userEntity);
         return new ResponseEntity<>(savedUser, HttpStatus.CREATED);
     }
 

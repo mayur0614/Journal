@@ -1,7 +1,7 @@
 package com.csmayur.Journal.entity;
 
 
-import com.sun.istack.internal.NotNull;
+import javax.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

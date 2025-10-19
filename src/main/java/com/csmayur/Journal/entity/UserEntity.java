@@ -1,6 +1,6 @@
 package com.csmayur.Journal.entity;
 
-import com.sun.istack.internal.NotNull;
+import javax.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 import org.bson.types.ObjectId;
