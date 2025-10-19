@@ -1,0 +1,352 @@
+18:34:31.608 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+18:34:31.620 [main] INFO  c.csmayur.Journal.JournalApplication - Starting JournalApplication using Java 1.8.0_462 on Mayur with PID 17628 (C:\Users\mayur\Desktop\spring\Journal\target\classes started by mayur in C:\Users\mayur\Desktop\spring\Journal)
+18:34:31.621 [main] INFO  c.csmayur.Journal.JournalApplication - The following 1 profile is active: "dev"
+18:34:32.472 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+18:34:32.544 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 2 MongoDB repository interfaces.
+18:34:33.450 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:34:33.459 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:34:33.466 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:34:33.466 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.78]
+18:34:33.644 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:34:33.644 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1947 ms
+18:34:35.125 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./1.8.0_462-b08", "application": {"name": "Cluster0"}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='cmayur1404_db_user', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@719d35e8]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.3fhaqhg.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-6hy5b4-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='Cluster0', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+18:34:35.486 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+18:34:36.130 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-srv-cluster0.3fhaqhg.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017 to client view of cluster
+18:34:36.208 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-srv-cluster0.3fhaqhg.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017 to client view of cluster
+18:34:36.209 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-srv-cluster0.3fhaqhg.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017 to client view of cluster
+18:34:36.230 [main] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.client.internal.MongoClientDelegate$1@7fb29ca9 from cluster description ClusterDescription{type=REPLICA_SET, connectionMode=MULTIPLE, serverDescriptions=[ServerDescription{address=ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+18:34:37.193 [cluster-rtt-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:14964}] to ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017
+18:34:37.193 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:16607}] to ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017
+18:34:37.193 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:14661}] to ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017
+18:34:37.193 [cluster-rtt-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:14661}] to ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017
+18:34:37.193 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:14965}] to ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017
+18:34:37.193 [cluster-rtt-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:16574}] to ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017
+18:34:37.194 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=503783500, setName='atlas-6hy5b4-shard-0', canonicalAddress=ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017, hosts=[ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017, ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017, ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000006d, setVersion=85, topologyVersion=TopologyVersion{processId=68f80aa14410bbacef53ff2f, counter=6}, lastWriteDate=Wed Oct 22 18:34:34 IST 2025, lastUpdateTimeNanos=573337207800}
+18:34:37.194 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=503792000, setName='atlas-6hy5b4-shard-0', canonicalAddress=ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017, hosts=[ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017, ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017, ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=85, topologyVersion=TopologyVersion{processId=68f80b4b4ff9120d50d937aa, counter=4}, lastWriteDate=Wed Oct 22 18:34:34 IST 2025, lastUpdateTimeNanos=573337051200}
+18:34:37.194 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=508219200, setName='atlas-6hy5b4-shard-0', canonicalAddress=ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017, hosts=[ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017, ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017, ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=85, topologyVersion=TopologyVersion{processId=68f80ca9fb4fadca738f6d57, counter=3}, lastWriteDate=Wed Oct 22 18:34:34 IST 2025, lastUpdateTimeNanos=573337051200}
+18:34:37.199 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff000000000000006d from replica set primary ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017
+18:34:37.199 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 85 from replica set primary ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017
+18:34:37.200 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017
+18:34:37.482 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:16611}] to ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017
+18:34:37.974 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@33379242, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e32fc22, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c991465, org.springframework.security.web.header.HeaderWriterFilter@77dba4cd, org.springframework.security.web.authentication.logout.LogoutFilter@28369db0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@76d72b5b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f973a14, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72503b19, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f5156a6, org.springframework.security.web.session.SessionManagementFilter@2740e316, org.springframework.security.web.access.ExceptionTranslationFilter@49cb1baf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d0e54e0]
+18:34:38.454 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:34:38.475 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+18:34:38.486 [main] INFO  c.csmayur.Journal.JournalApplication - Started JournalApplication in 7.562 seconds (JVM running for 9.268)
+18:35:03.782 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:35:03.782 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:35:03.785 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+18:35:04.679 [http-nio-8080-exec-1] ERROR c.c.Journal.service.UserService - Error saving user
+org.springframework.dao.DuplicateKeyException: Write operation error on server ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: journaldb.user index: userName dup key: { userName: "ram" }', details={}}.; nested exception is com.mongodb.MongoWriteException: Write operation error on server ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: journaldb.user index: userName dup key: { userName: "ram" }', details={}}.
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:106)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:3029)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:581)
+	at org.springframework.data.mongodb.core.MongoTemplate.insertDocument(MongoTemplate.java:1530)
+	at org.springframework.data.mongodb.core.MongoTemplate.doInsert(MongoTemplate.java:1326)
+	at org.springframework.data.mongodb.core.MongoTemplate.insert(MongoTemplate.java:1241)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.save(SimpleMongoRepository.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:530)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:286)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:640)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:76)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241)
+	at com.sun.proxy.$Proxy77.save(Unknown Source)
+	at com.csmayur.Journal.service.UserService.saveEntry(UserService.java:40)
+	at com.csmayur.Journal.controller.PublicController.createUser(PublicController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:337)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:164)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: com.mongodb.MongoWriteException: Write operation error on server ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: journaldb.user index: userName dup key: { userName: "ram" }', details={}}.
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:1018)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:471)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:454)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:448)
+	at org.springframework.data.mongodb.core.MongoTemplate.lambda$insertDocument$15(MongoTemplate.java:1536)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:579)
+	... 117 common frames omitted
+19:08:19.118 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:702)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.SocketException: Socket is closed
+	at java.net.Socket.setSoTimeout(Socket.java:1155)
+	at sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:637)
+	at sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:73)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:137)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571)
+	... 5 common frames omitted
+19:08:19.119 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:702)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.SocketException: Socket is closed
+	at java.net.Socket.setSoTimeout(Socket.java:1155)
+	at sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:637)
+	at sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:73)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:137)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571)
+	... 5 common frames omitted
+19:08:19.118 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:702)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.SocketException: Socket is closed
+	at java.net.Socket.setSoTimeout(Socket.java:1155)
+	at sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:637)
+	at sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:73)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:137)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571)
+	... 5 common frames omitted
+19:08:19.143 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017
+com.mongodb.MongoSocketException: ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.UnknownHostException: ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:867)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1302)
+	at java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:815)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1291)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1144)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1065)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 common frames omitted
+19:08:19.143 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017
+com.mongodb.MongoSocketException: ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.UnknownHostException: ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:867)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1302)
+	at java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:815)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1291)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1144)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1065)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 common frames omitted
+19:08:19.145 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017
+com.mongodb.MongoSocketException: ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.UnknownHostException: ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:867)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1302)
+	at java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:815)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1291)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1144)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1065)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 common frames omitted
+19:08:29.433 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:15261}] to ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017
+19:08:29.434 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=126459200, setName='atlas-6hy5b4-shard-0', canonicalAddress=ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017, hosts=[ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017, ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017, ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=85, topologyVersion=TopologyVersion{processId=68f80ca9fb4fadca738f6d57, counter=3}, lastWriteDate=Wed Oct 22 19:08:28 IST 2025, lastUpdateTimeNanos=2605579100800}
+19:08:29.446 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:17204}] to ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017
+19:08:29.447 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=140014300, setName='atlas-6hy5b4-shard-0', canonicalAddress=ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017, hosts=[ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017, ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017, ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000006d, setVersion=85, topologyVersion=TopologyVersion{processId=68f80aa14410bbacef53ff2f, counter=6}, lastWriteDate=Wed Oct 22 19:08:28 IST 2025, lastUpdateTimeNanos=2605592666400}
+19:08:29.447 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017
+19:08:29.451 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:15572}] to ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017
+19:08:29.452 [cluster-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=144716700, setName='atlas-6hy5b4-shard-0', canonicalAddress=ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017, hosts=[ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017, ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017, ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=85, topologyVersion=TopologyVersion{processId=68f80b4b4ff9120d50d937aa, counter=4}, lastWriteDate=Wed Oct 22 19:08:28 IST 2025, lastUpdateTimeNanos=2605597533200}
+19:08:37.337 [cluster-rtt-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:14, serverValue:15266}] to ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017
+19:08:37.337 [cluster-rtt-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:16, serverValue:15574}] to ac-tntfc8j-shard-00-00.3fhaqhg.mongodb.net:27017
+19:08:37.338 [cluster-rtt-ClusterId{value='68f8d663297acf7d4c6da93a', description='null'}-ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:15, serverValue:17279}] to ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017
+19:33:31.620 [SpringApplicationShutdownHook] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:17, serverValue:18113}] to ac-tntfc8j-shard-00-02.3fhaqhg.mongodb.net:27017
+20:32:10.739 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[myFileAppender] - File property must be set before any triggeringPolicy or rollingPolicy properties
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[myFileAppender] - For more information, please visit http://logback.qos.ch/codes.html#rfa_file_after
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.csmayur.Journal.JournalApplication.main(JournalApplication.java:16)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[myFileAppender] - File property must be set before any triggeringPolicy or rollingPolicy properties
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[myFileAppender] - For more information, please visit http://logback.qos.ch/codes.html#rfa_file_after
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:232)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 18 common frames omitted
+20:32:41.619 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[myFileAppender] - File property must be set before any triggeringPolicy or rollingPolicy properties
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[myFileAppender] - For more information, please visit http://logback.qos.ch/codes.html#rfa_file_after
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.csmayur.Journal.JournalApplication.main(JournalApplication.java:16)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[myFileAppender] - File property must be set before any triggeringPolicy or rollingPolicy properties
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[myFileAppender] - For more information, please visit http://logback.qos.ch/codes.html#rfa_file_after
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:232)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 18 common frames omitted
