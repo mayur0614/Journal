@@ -1,11 +1,9 @@
-
 spring:
   data:
     mongodb:
-      uri: ${MONGODB_URI}  # Use environment variable for MongoDB connection
+      uri: mongodb+srv://cmayur1404_db_user:IDBZtZsqT8QDR0JR@cluster0.3fhaqhg.mongodb.net/journaldb?retryWrites=true&w=majority&appName=Cluster0
       database: journaldb
       auto-index-creation: true
 
 server:
-  port: ${PORT:8080}
-
+  port: 8080
