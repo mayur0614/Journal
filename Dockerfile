@@ -1,5 +1,5 @@
 # Stage 1: Build the application using Maven official image
-FROM maven:3.9.0-openjdk-11 AS build
+FROM maven:3.8.6-openjdk-11 AS build
 
 # Set working directory
 WORKDIR /app
