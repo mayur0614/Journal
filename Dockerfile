@@ -1,16 +1,11 @@
-# Use OpenJDK 11 base image
-FROM openjdk:11-jdk-slim AS build
+FROM maven:3.9.0-openjdk-11 AS build
 
 WORKDIR /app
 
-COPY mvnw .mvn .mvn/
-COPY pom.xml ./
-
-RUN ./mvnw dependency:go-offline
-
+COPY pom.xml .
 COPY src ./src
 
-RUN ./mvnw clean package -DskipTests
+RUN mvn clean package -DskipTests
 
 FROM openjdk:11-jre-slim
 
