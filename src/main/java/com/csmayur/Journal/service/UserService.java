@@ -30,8 +30,7 @@ public class UserService {
     private static final PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
     public Boolean saveEntry(UserEntity userEntity){
         try{
-            userEntity.setPassword(passwordEncoder.encode(userEntity.getPassword()));
-            userEntity.setRoles(Arrays.asList("USER"));
+            userEntity.setRoles(Arrays.asList("ROLE_USER"));
             userEntryRepo.save(userEntity);
             log.info("User saved successfully");
             log.debug("from debug successful");
@@ -55,7 +54,7 @@ public class UserService {
         }
     }*/
     public UserEntity saveAdmin(UserEntity userEntity){
-        userEntity.setRoles(Arrays.asList("USER","ADMIN"));
+        userEntity.setRoles(Arrays.asList("ROLE_USER", "ROLE_ADMIN"));
         userEntryRepo.save(userEntity);
         return userEntity;
     }

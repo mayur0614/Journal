@@ -1,1 +1,1 @@
-23:22:53.710 [http-nio-8080-exec-3] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:116, serverValue:4114}] to ac-tntfc8j-shard-00-01.3fhaqhg.mongodb.net:27017
+12:26:31.202 [http-nio-0.0.0.0-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
