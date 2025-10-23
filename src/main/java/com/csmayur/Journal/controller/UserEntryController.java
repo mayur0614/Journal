@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("user")
 public class UserEntryController {
 
     @Autowired

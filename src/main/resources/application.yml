@@ -6,6 +6,6 @@ spring:
       auto-index-creation: true
       connect-timeout: 60000
       socket-timeout: 60000
-
 server:
-  port: ${PORT:8080}  # Render provides dynamic port via this environment variable
+  address: 0.0.0.0
+  port: ${PORT:8080}
