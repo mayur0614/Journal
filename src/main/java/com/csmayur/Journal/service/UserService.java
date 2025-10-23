@@ -21,17 +21,11 @@ import java.util.List;
 import java.util.Optional;
 
 @Slf4j
-@Component
 @Profile("dev")
 @Service
 public class UserService {
     @Autowired
     private UserEntryRepo userEntryRepo;
-
-    //save
-    //getALl
-    //findById
-    // delete by id
 
 
     private static final PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
