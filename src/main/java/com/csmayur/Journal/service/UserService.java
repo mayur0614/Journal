@@ -21,7 +21,6 @@ import java.util.List;
 import java.util.Optional;
 
 @Slf4j
-@Profile("dev")
 @Service
 public class UserService {
     @Autowired
@@ -39,7 +38,6 @@ public class UserService {
             return true ;
         } catch(Exception e){
             log.debug("from debug failed");
-
             log.error("Error saving user", e);
             return false;
         }
