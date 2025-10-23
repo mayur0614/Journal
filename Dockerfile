@@ -24,4 +24,4 @@ COPY --from=build /app/target/Journal-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
 
 # Run the Spring Boot app with the assigned PORT
-CMD ["sh", "-c", "java -jar app.jar --server.port=${PORT}"]
+CMD ["sh", "-c", "java -jar app.jar --server.port=${PORT:-8080} --server.address=0.0.0.0"]
