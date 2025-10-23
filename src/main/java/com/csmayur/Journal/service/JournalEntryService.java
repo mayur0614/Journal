@@ -28,7 +28,7 @@ public class JournalEntryService {
     @Transactional
     public void  saveEntry(JournalEntry journalEntry, String user){
         try {
-            UserEntity userIdB = userService.findByUserId(user);
+            UserEntity userIdB = userService.findByUserName(user);
             JournalEntry saved = journalEntryRepo.save(journalEntry);
             userIdB.getJournalEntries().add(saved);
             userService.saveEntry(userIdB);
@@ -60,7 +60,7 @@ public class JournalEntryService {
     @Transactional
     public  void deleteById(ObjectId myId,String userName){
         try {
-            UserEntity user = userService.findByUserId(userName);
+            UserEntity user = userService.findByUserName(userName);
             user.getJournalEntries().removeIf(x -> x.getId().equals(myId));
             userService.saveEntry(user);
             journalEntryRepo.deleteById(myId);

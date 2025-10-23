@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("user")
 public class UserEntryController {
 
     @Autowired
@@ -38,7 +38,7 @@ public class UserEntryController {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String userName = authentication.getName();
 
-        UserEntity userInDb = userService.findByUserId(userName);
+        UserEntity userInDb = userService.findByUserName(userName);
             userInDb.setUserName(userEntity.getUserName());
             userInDb.setPassword(passwordEncoder.encode(userEntity.getPassword()));
             userService.saveEntry(userInDb);
@@ -50,7 +50,7 @@ public class UserEntryController {
     public ResponseEntity<?> deleteUser() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String userName = authentication.getName();
-        UserEntity userInDb = userService.findByUserId(userName);
+        UserEntity userInDb = userService.findByUserName(userName);
         userService.deleteById(userInDb.getId());
         return new ResponseEntity<>(HttpStatus.OK);
     }

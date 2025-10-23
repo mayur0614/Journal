@@ -81,7 +81,6 @@ public class UserService {
         }
         return false;
     }
-    public  UserEntity findByUserId(String userName){
+    public UserEntity findByUserName(String userName) {
         return userEntryRepo.findByUserName(userName);
-    }
-}
+    }}
